@@ -1,0 +1,58 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=1.2in, left=.8in, right=.8in, bottom=1.in, headheight=27.18335pt]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{multirow,array}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage/\pageref{LastPage}}
+\lfoot{Lecturer name, TA name}
+\lhead{
+Your university, department\\
+chair/group}
+\rhead{
+Course title\\
+Spring/Autumn Semester 20xx}
+\renewcommand{\headrulewidth}{.5pt}
+\renewcommand{\footrulewidth}{.5pt}
+
+% Title: "Problem Set" or "Solution"
+\newcommand{\problemset}[1]{\section*{Problem Set #1}}
+\newcommand{\solution}[1]{\section*{Problem Set #1 -- Solution}}
+
+% Structured exercises 
+\newcounter{exercisecounter}
+\newcommand{\exercise}{\stepcounter{exercisecounter}{\subsection*{Exercise \arabic{exercisecounter}}}}
+
+% Paragraph settings (indentation and spacing)
+\setlength{\parindent}{0.em}
+\setlength{\parskip}{1.em}
+
+\begin{document}
+\vspace*{0in}
+\thispagestyle{fancy}
+\problemset{1}
+\exercise
+Some introductory text
+\begin{enumerate}[leftmargin=0.cm]
+    \item First task
+    \item Second task
+    \item ...
+\end{enumerate}
+
+\exercise
+Some introductory text for the second exercise
+\begin{enumerate}[leftmargin=0in]
+    \item First task
+    \item ...
+\end{enumerate}
+
+\end{document}
