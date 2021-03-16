@@ -1,6 +1,7 @@
 # Problem set template
 
-This template provides a minimal template to prepare problem set handouts and solution
+This template provides a minimal template to prepare problem set handouts and solution.
+I use the pdfLaTeX compiler and Tex Live version 2020.
 
 ## TODOs
 
